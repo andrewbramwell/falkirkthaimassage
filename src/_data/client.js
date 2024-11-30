@@ -1,8 +1,8 @@
 module.exports = {
     "name": "Falkirk Thai Massage",
     "email": "falkkirkthaimassage@gmail.com",
-    "phoneForTel": "+447563567637",
-    "phoneFormatted": "07563 567637",
+    "phoneForTel": "+447564752559",
+    "phoneFormatted": "07564 752559",
     "openingHours": "Mon-Sun: 10am-8pm",
     "onlineBooking": "https://falkirkthaimassage.setmore.com/",
     "address": {

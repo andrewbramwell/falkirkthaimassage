@@ -507,10 +507,10 @@ html {
     position: relative;
   }
   #cs-navigation .cs-li-link.cs-active {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #cs-navigation .cs-li-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #cs-navigation .cs-button-solid {
     display: none;
