@@ -1,18 +1,18 @@
 module.exports = {
-    "name": "Splendid Sites Web Designs",
-    "email": "help@splendidsites.com",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
-    "openingHours": "Mon-Sun: 9am-9pm",
-    "onlineBooking": "https://www.facebook.com/",
+    "name": "Falkirk Thai Massage",
+    "email": "falkkirkthaimassage@gmail.com",
+    "phoneForTel": "+447563567637",
+    "phoneFormatted": "07563 567637",
+    "openingHours": "Mon-Sun: 10am-8pm",
+    "onlineBooking": "https://falkirkthaimassage.setmore.com/",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "country": "US",
-        "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
+        "lineOne": "118 Main St",
+        "lineTwo": "Bainsford",
+        "city": "Falkirk",
+        "state": "",
+        "zip": "FK2 7PA",
+        "country": "UK",
+        "mapLink": "https://maps.app.goo.gl/hwRRnn2hBEmNaGwX7"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
@@ -20,5 +20,5 @@ module.exports = {
         "googleReview": "",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://www.falkirkthaimassage.co.uk"
 };

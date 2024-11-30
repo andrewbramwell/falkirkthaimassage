@@ -1,7 +1,6 @@
 ---
-title: 'About | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'About | Falkirk Thai Massage'
+description: "Meet Lin, our expert Thai massage therapist in Falkirk. With extensive training and experience in traditional Thai massage techniques, Lin helps restore balance and vitality."
 permalink: 'about/'
 eleventyNavigation:
     key: About Us
@@ -12,6 +11,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
 {% endblock %}
 
 {% block body %}
@@ -38,25 +38,105 @@ eleventyNavigation:
             <img src="{% getUrl "/assets/images/about.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="massage" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
         <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
+            <h2 class="cs-title">About Falkirk Thai Massage</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
+                Lin, the founder of Falkirk Thai Massage, comes from Nakornpanom, Thailand, a region known for its deep-rooted healing traditions. Her journey in massage therapy began with a passionate commitment to mastering the art of Thai massage, leading her to pursue formal training at the prestigious Wat Dhammamongkol in Bangkok.
             </p>
             <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                Since moving to the UK in 2016, Lin has dedicated herself to sharing the authentic healing practices of Thai massage with the Scottish community. Her path began in Scarborough, where she successfully operated Lyn Thai Massage for three years before bringing her expertise to Falkirk in 2021.
             </p>
-            <div id="quote-827">
-                <span class="cs-quote-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                </span>
-                <span class="cs-name">Justin Time</span>
-                <span class="cs-job">CEO-Founder</span>
-                <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-            </div>                        
+            <p class="cs-text">
+                Committed to excellence in her craft, Lin holds multiple professional qualifications. She completed her Thai Traditional course from the Thai Traditional Medical Service Society in 2016, and recently earned her Diploma in Deep Tissue Massage from FAMI Hair & Beauty Institute in the UK, demonstrating her commitment to combining traditional wisdom with modern therapeutic techniques.
+            </p>
+            <p class="cs-text">
+                At Falkirk Thai Massage, we understand that each client's journey to wellness is unique. Whether you're seeking relief from chronic tension, looking to improve flexibility, or simply wanting to experience deep relaxation, our treatments are carefully tailored to meet your individual needs.
+            </p>
+            <p class="cs-text">
+                Lin's dedication to her practice is evident in every aspect of her work. She maintains exceptionally high standards of cleanliness and professionalism, ensuring fresh linens for every session and maintaining a warm, welcoming environment. Her growing reputation in Falkirk is built on consistently delivering effective treatments that help clients achieve their wellness goals.
+            </p>
+            <p class="cs-text">
+                We invite you to experience the authentic healing traditions of Thai massage in the heart of Falkirk. Our newly established location offers modern facilities including two well-appointed treatment rooms and convenient parking options. Visit us today and discover how traditional Thai massage techniques can enhance your wellbeing and quality of life.
+            </p>     
         </div>
     </div>
 </section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1446">
+    <div class="cs-container">
+        <!--Gallery-->
+        <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 686, height: 520}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 686, height: 520}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 686, height: 520}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 640, height: 640}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 640, height: 640}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 640, height: 640}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 610, height: 640}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 610, height: 640}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 610, height: 640}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 610, height: 640}) | jpeg %}" alt="gallery image" width="305" height="320" loading="lazy">
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 686, height: 520}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 686, height: 520}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 686, height: 520}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 640, height: 640}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 640, height: 640}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 640, height: 640}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 610, height: 640}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 610, height: 640}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 610, height: 640}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 610, height: 640}) | jpeg %}" alt="gallery image" width="305" height="320" loading="lazy">
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 686, height: 520}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 686, height: 520}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 686, height: 520}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 640, height: 640}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 640, height: 640}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 640, height: 640}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 610, height: 640}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 610, height: 640}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 610, height: 640}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 610, height: 640}) | jpeg %}" alt="gallery image" width="305" height="320" loading="lazy">
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 686, height: 520}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 686, height: 520}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 686, height: 520}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 640, height: 640}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 640, height: 640}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 640, height: 640}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 610, height: 640}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 610, height: 640}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 610, height: 640}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 610, height: 640}) | jpeg %}" alt="gallery image" width="305" height="320" loading="lazy">
+            </picture>
+        </div>
+    </div>
+</section>
+                                
 
 
 {% endblock %}

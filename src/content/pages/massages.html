@@ -1,7 +1,6 @@
 ---
-title: 'Massages | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/banner.jpg'
+title: 'Massages | Falkirk Thai Massage'
+description: "Discover our range of Thai massage treatments in Falkirk. From traditional Thai massage to oil massage and deep tissue treatments, find your path to relaxation."
 permalink: 'massages/'
 eleventyNavigation:
     key: Massages
@@ -12,10 +11,11 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/massages.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
 {% endblock %}
 
 {% block body %}
 
-{% include 'components/pricing-tiles.html' %}                                                  
+{% include 'components/pricing-menu.html' %}                                                  
 
 {% endblock %}

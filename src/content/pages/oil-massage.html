@@ -1,0 +1,71 @@
+---
+title: 'Thai Oil Massage'
+description: "Experience the soothing benefits of Thai oil massage in Falkirk. Combining flowing strokes with warm oils for deep relaxation and muscle tension relief."
+permalink: 'oil-massage/'
+eleventyNavigation:
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service-page.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1084, height: 1334}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1084, height: 1334}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" alt="oil massage" width="542" height="728" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Experience <span class="cs-color">Thai Oil Massage</span> in Falkirk</h1>
+            <p>Welcome to Falkirk Thai Massage! Discover the harmonious blend of traditional Thai massage techniques and aromatic oils in our signature Thai Oil Massage, where ancient wisdom meets modern relaxation for a truly transformative experience.</p>
+            <p>During your session, our expert therapist combines long, flowing strokes with traditional Thai pressure techniques, enhanced by the smooth glide of warm, therapeutic oils. This balanced treatment delivers medium to firm pressure, working to release muscle tension while promoting deep relaxation throughout your body and mind.</p>
+            <p>Our Thai Oil Massage is ideal for those seeking both relaxation and therapeutic benefits. The combination of skilled massage techniques and carefully selected oils works to ease muscle tension, improve circulation, and nourish your skin. Perfect for addressing specific areas of tension or enjoying a full-body relaxation experience, this massage offers an excellent balance of traditional Thai expertise and contemporary wellness practices.</p>
+            <h3>Discover the Falkirk Thai Massage Difference</h3>
+            <ul>
+                <li>
+                    <strong>Traditional Thai Techniques:</strong> Experience the perfect fusion of authentic Thai massage methods with the added benefits of therapeutic oils for enhanced relaxation and healing.
+                </li>
+                <li>
+                    <strong>Muscle Tension Relief:</strong> Our specialized combination of pressure and flowing strokes helps release deep-seated tension and promotes lasting muscle relaxation.
+                </li>
+                <li>
+                    <strong>Improved Circulation:</strong> The warming oils and skilled massage techniques work together to enhance blood flow and promote natural healing throughout your body.
+                </li>
+                <li>
+                    <strong>Skin Nourishment:</strong> Premium-quality oils are selected to complement the massage, leaving your skin hydrated and refreshed while your muscles unwind.
+                </li>
+                <li>
+                    <strong>Personalised Treatment:</strong> Every session is tailored to address your specific needs and preferences, ensuring the perfect balance of pressure and technique for optimal results.
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

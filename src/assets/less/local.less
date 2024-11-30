@@ -7,6 +7,7 @@
 @media only screen and (min-width: 0rem) {
     #sbs-867 {
         padding: var(--sectionPadding);
+        background-color: var(--backgroundColor);
 
         .cs-container {
             width: 100%;
@@ -53,6 +54,7 @@
             /* 400px - 775px */
             height: clamp(25rem, 70vw, 48.4375rem);
             overflow: hidden;
+            border: 8px solid #fff;
 
             img {
                 position: absolute;
@@ -94,8 +96,9 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-867 {
+            background-color: #0E0E0E;
             .cs-topper {
-                color: var(--primaryLight);
+                color: var(--primary);
             }
 
             .cs-title,
@@ -127,6 +130,7 @@
 @media only screen and (min-width: 0rem) {
     #sbs-r-870 {
         padding: var(--sectionPadding);
+        background-color: var(--backgroundColor);
 
         .cs-container {
             width: 100%;
@@ -173,6 +177,7 @@
             /* 400px - 775px */
             height: clamp(25rem, 70vw, 48.4375rem);
             overflow: hidden;
+            border: 8px solid #fff;
 
             img {
                 position: absolute;
@@ -216,8 +221,9 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-r-870 {
+            background-color: var(--dark);
             .cs-topper {
-                color: var(--primaryLight);
+                color: var(--primary);
             }
 
             .cs-title,
@@ -304,7 +310,7 @@
         .cs-faq-item {
             list-style: none;
             width: 100%;
-            background-color: #f7f7f7;
+            background-color: var(--backgroundColor);
             /* clips all corners of the button that overlap the rounded border */
             overflow: hidden;
             transition: border-bottom 0.3s;
@@ -338,9 +344,10 @@
             line-height: 1.2em;
             text-align: left;
             font-weight: bold;
+            font-family: 'Space Grotesk';
             /* 20px - 24px */
             padding: clamp(1.25rem, 2vw, 1.5rem);
-            background-color: #f7f7f7;
+            background-color: var(--backgroundColor);
             border: none;
             color: var(--headerColor);
             display: block;
