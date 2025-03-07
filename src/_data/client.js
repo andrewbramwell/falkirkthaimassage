@@ -15,8 +15,8 @@ module.exports = {
         "mapLink": "https://maps.app.goo.gl/hwRRnn2hBEmNaGwX7"
     },
     "socials": {
-        "facebook": "https://www.facebook.com/",
-        "instagram": "https://www.instagram.com/",
+        "facebook": "",
+        "instagram": "",
         "googleReview": "",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
