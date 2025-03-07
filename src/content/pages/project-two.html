@@ -1,7 +1,6 @@
 ---
-title: 'Project Two | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Gallery| Falkirk Thai Massage'
+description: 'Meet Lyn, our expert Thai massage therapist in Falkirk. With extensive training and experience in traditional Thai massage techniques, Lin helps restore balance and vitality.'
 permalink: gallery/
 eleventyNavigation:
     key: Gallery
@@ -13,6 +12,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
 {% endblock %}
 
 {% block body %}
