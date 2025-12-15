@@ -20,5 +20,45 @@ module.exports = {
         "googleReview": "",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://falkirkthaimassage.co.uk"
+    "domain": "https://www.falkirkthaimassage.co.uk",
+    "schema": {
+        "business": {
+            "@context": "https://schema.org",
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://www.falkirkthaimassage.co.uk/#business",
+            "name": "Falkirk Thai Massage",
+            "image": "https://www.falkirkthaimassage.co.uk/assets/svgs/logo-white.svg",
+            "url": "https://www.falkirkthaimassage.co.uk",
+            "telephone": "+447564752559",
+            "email": "falkkirkthaimassage@gmail.com",
+            "priceRange": "££",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "118 Main St, Bainsford",
+                "addressLocality": "Falkirk",
+                "postalCode": "FK2 7PA",
+                "addressCountry": "GB"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "url": "https://maps.app.goo.gl/hwRRnn2hBEmNaGwX7"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "10:00",
+                "closes": "20:00"
+            }
+        },
+        "website": {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.falkirkthaimassage.co.uk/#website",
+            "url": "https://www.falkirkthaimassage.co.uk",
+            "name": "Falkirk Thai Massage",
+            "publisher": {
+                "@id": "https://www.falkirkthaimassage.co.uk/#business"
+            }
+        }
+    }
 };
